@@ -1,11 +1,13 @@
 import React from "react";
+import Navbar from "../components/Header/Navbar/Navbar";
 
-const MyComponent = () => {
+const Header = () => {
   return (
-    <div className="bg-[#212426] px-[10%] py-5 flex items-center justify-center">
-      <h1 className="text-white font-[700] tracking-wider">keep going</h1>
+    <div className="gap7 mt-6 flex flex-col items-center justify-center gap-6">
+      <h1>keep going</h1>
+      <Navbar />
     </div>
   );
 };
 
-export default MyComponent;
+export default Header;
