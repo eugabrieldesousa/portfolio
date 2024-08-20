@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from "react-typewriter-effect";
 import Memoji from "../components/Header/Memoji/Memoji";
 import Button from "../components/Hero/Button/Button";
 import ButtonOutline from "../components/Hero/ButtonOutline/ButtonOutline";
@@ -6,11 +7,21 @@ import Technology from "../components/Hero/Technology/Technology";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-7">
+    <div className="flex h-[calc(100vh-100px)] flex-col items-center justify-center gap-8">
       <Memoji />
       <h1 className="text-center text-5xl font-[900] tracking-tight">
-        Apaixonado <br />
-        em solucionar problemas
+        <Typewriter
+          textStyle={{ fontFamily: "inherit", fontWeight: "900" }}
+          cursorColor="black"
+          multiText={[
+            "Apaixonado em solucionar problemas",
+            "Apaixonado em tecnologia",
+            "Apaixonado em tocar piano",
+          ]}
+          multiTextDelay={2500}
+          typeSpeed={50}
+          multiTextLoop
+        />
       </h1>
       <p className="flex w-[40rem] text-center font-[400]">
         sou um desenvolvedor full-stack apaixonado por tecnologia e dedicado a

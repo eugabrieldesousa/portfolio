@@ -8,12 +8,15 @@ const About = () => {
       <div className="flex items-center justify-center">
         <img
           className="w-64 transition duration-500 hover:scale-[1.1]"
+          data-aos="zoom-in"
           src="./eumemojiabout.png"
-          alt=""
+          alt="Sobre mim"
         />
         <div className="flex w-1/4 flex-col gap-6 text-right">
-          <h2 className="text-2xl font-bold tracking-wide">sobre mim.</h2>
-          <p>
+          <h2 className="text-2xl font-bold tracking-wide" data-aos="fade-up">
+            sobre mim.
+          </h2>
+          <p data-aos="fade-up">
             E ai! Me chamo <b>Gabriel de Sousa</b>, tenho 20 anos e sou
             desenvolvedor <b>full-stack</b> residindo em Joinville, SC.
             <br />
@@ -37,7 +40,15 @@ const About = () => {
         <Number number={11} text={"clientes no geral"} />
         <Number number={8} text={"projetos que trabalhei"} />
       </div>
-      <ClientesSlider />
+      <div className="flex w-1/2 flex-col items-center justify-center pt-28">
+        <h2
+          className="font-mono text-2xl font-bold uppercase tracking-widest"
+          data-aos="zoom-in"
+        >
+          Clientes
+        </h2>
+        <ClientesSlider />
+      </div>
     </section>
   );
 };
